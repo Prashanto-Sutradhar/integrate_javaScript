@@ -37,7 +37,7 @@ console.log(sum);
 
 
 //forEach function return nothing;
-//map function return function returns array
+//map function return function  an  array
 
 const resutl3 = arr3.forEach((item) => console.log(item))
 console.log(resutl3);
@@ -81,3 +81,38 @@ console.log(x);
 //find..........
 const y = friends.find((item) => item === 'munna');
 console.log(y)
+
+
+//........filter........
+//first of all normal way we can see that...........
+const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const filter = numbers1 => {
+    const result = [];
+    for (let item of numbers1) {
+
+        if (item % 2 === 0) {
+            result.push(item)
+        }
+        return result;
+    }
+
+}
+const x1 = filter(numbers1)
+console.log(x1);
+
+const y1 = numbers1.filter((item) => item % 2 === 0)
+console.log(y1);
+
+
+
+//............reduce..............
+//previous + current value = result;
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sum2 = numbers2.reduce((previous, current) => previous + current)
+console.log(sum2);
+
+
+const mul = numbers2.reduce((previous, current) => previous * current)
+console.log(mul);
