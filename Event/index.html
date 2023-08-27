@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <h1>welcome to event on javascript </h1>
+
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="console.log('hello')">here me</button>
+    <button onclick="console.log(8)">click this button</button>
+    <button title="this is login button" onclick="console.log(5)">LOG IN</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="document.body.style.backgroundColor='yellow'">YELLOW</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="document.body.style.backgroundColor='green'">GREEN</button>
+    <br>
+    <br>
+    <br>
+    <button id="red">RED</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="purple()">Purple</button>
+    <br>
+    <br>
+    <br>
+    <button id="sky-blue">Deep Sky Blue
+    </button>
+    <br>
+    <br>
+    <br>
+    <button id="hotPink">Hot Pink</button>
+    <script src="event.js "></script>
+    <script>
+        const redButton = document.getElementById('red');
+        // console.log(redButton);
+        redButton.onclick = function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+
+</body>
+
+</html>
